@@ -1,0 +1,19 @@
+<h2>Details of all batches</h2>
+<!-- <div *ngFor="let item of batchDetails">
+   <li> Name: {{item.Name}} , Duration: {{item.Duration}}, Fees: {{item.Fees}} </li>
+</div> -->
+
+
+    <table border="1">
+        <tr>
+        <th>Name</th>
+        <th>Duration</th>
+        <th>Fees</th>
+        </tr>
+        
+        <tr *ngFor="let item of batchDetails">
+            <td>{{item.Name}}</td>
+           <td>{{item.Duration}}</td> 
+           <td>{{item.Fees}}</td> 
+        </tr>
+    </table>
